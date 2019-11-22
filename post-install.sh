@@ -30,7 +30,7 @@ fi
 # packages section
 develpoment='apache2 php7.2 php7.2-curl php7.2-cli php7.2-common php7.2-intl php7.2-json php7.2-mbstring php7.2-mysql
 	php7.2-opcache php7.2-readline php7.2-xml mysql-server mono-devel mono-xsp4 monodevelop git'
-other='steam-installer zsh todotxt-cli remind xsel'
+other='steam-installer zsh todotxt-cli remind xsel conky'
 
 sudo apt install $develpoment $other
 
@@ -53,7 +53,7 @@ wget https://github.com/neovim/neovim/releases/download/v0.4.3/nvim.appimage -O 
 cp -r /tmp/post-install/dotfiles/nvim $HOME/.config/
 cp -r /tmp/post-install/dotfiles/prettier $HOME/.config/
 cp -r /tmp/post-install/dotfiles/conky $HOME/.config/conky
-cp -r /tmp/post-install/dotfiles/.todo-txt $HOME/.config/todo-txt
+cp -r /tmp/post-install/dotfiles/todo-txt $HOME/.config/todo-txt
 
 # apache setting
 mkdir $HOME/.web
