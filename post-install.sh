@@ -41,7 +41,7 @@ git clone https://github.com/Rodrigo-Barros/dotfiles /tmp/post-install/dotfiles
 
 #oh-my-zsh
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 cp /tmp/post-install/dotfiles/.zshrc $HOME/.zshrc
 
 # faster node virtual machine manager fnm
