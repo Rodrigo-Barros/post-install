@@ -19,7 +19,7 @@ echo "atualizando os servidores remotos ..."
 
 sudo apt update
 # create a restore point before start
-sudo apt install timeshift
+sudo apt install timeshift -y
 
 sudo timeshift-gtk
 if [ $? -ne 0 ]; then
@@ -32,7 +32,7 @@ develpoment='apache2 php7.2 php7.2-curl php7.2-cli php7.2-common php7.2-intl php
 	php7.2-opcache php7.2-readline php7.2-xml mysql-server mono-devel mono-xsp4 monodevelop git'
 other='steam-installer zsh todotxt-cli remind xsel conky'
 
-sudo apt install $develpoment $other
+sudo apt install $develpoment $other -y
 
 wget -c https://az764295.vo.msecnd.net/stable/8795a9889db74563ddd43eb0a897a2384129a619/code_1.40.1-1573664190_amd64.deb -O $HOME/Downloads/visual-code.deb
 sudo dpkg -i $HOME/Downloads/visual-code.deb
